@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/1.ico" type="image/x-icon">
+
+    <style>
+        audio{
+            width: 450px;
+            margin: 30px 0;
+        }
+        body{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        li{
+            list-style: none;
+            height: 30px;
+            line-height: 30px;
+            transition: all 0.2s;
+            /* border: 1px solid white; */
+        }
+        .container{
+            height: 420px;
+            border: 1px solid white;
+            overflow: hidden;
+        }
+        ul{
+            transition: all 0.5s;
+            /* transform: translateY(-20px); */
+        }
+        .active{
+            color: orange;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>歌词滚动效果</h1>
+    <audio controls src="./assets/music.mp3"></audio>
+    <div class="container">
+        <ul>
+           
+        </ul>
+    </div>
+    <script src="./js/data.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
